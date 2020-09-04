@@ -55,31 +55,3 @@ def complete_states_agg():
     df_states_agg = df_states_agg.drop(df_states_agg.index[df_states_agg['State/Territory'].isin(remove_list)])
 
     return df_states_agg
-
-
-"""
-<class 'pandas.core.frame.DataFrame'>
-Int64Index: 52 entries, 0 to 51
-Data columns (total 17 columns):
- #   Column                    Non-Null Count  Dtype  
----  ------                    --------------  -----  
- 0   State/Territory           52 non-null     object 
- 1   confirmed                 52 non-null     int64  
- 2   Union Status              52 non-null     object 
- 3   Code                      52 non-null     object 
- 4   lat                       52 non-null     float64
- 5   lon                       52 non-null     float64
- 6   Population                52 non-null     float64
- 7   State FIPS                52 non-null     object 
- 8   2019 Est Pop              52 non-null     object 
- 9   Confirmed Cases           52 non-null     object 
- 10  deaths                    52 non-null     int64  
- 11  Deaths                    52 non-null     object 
- 12  pop_factor                52 non-null     float64
- 13  cc_per_100k               52 non-null     float64
- 14  d_per_100k                52 non-null     float64
- 15  Confirmed Cases per 100k  52 non-null     object 
- 16  Deaths per 100k           52 non-null     object 
-dtypes: float64(6), int64(2), object(9)
-memory usage: 7.3+ KB
-"""

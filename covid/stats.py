@@ -19,9 +19,5 @@ def counties_stats():
     df = pd.read_csv('static/metadata/counties_stats.csv')
     # convert FIPS into string
     df['FIPS'] = df['FIPS'].fillna(0).astype(int).apply(lambda x: str(x).zfill(5))
-    return df
 
-
-def counties_population():
-    df = pd.read_csv('static/metadata/counties_population.csv')
     return df

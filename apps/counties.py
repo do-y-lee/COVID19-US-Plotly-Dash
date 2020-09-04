@@ -61,25 +61,22 @@ def create_us_bubble_map_counties(metric_name):
 def create_state_map_counties(state_name, metric_name):
     if state_name == 'Alaska':
         zoom_num = 2.7
-    elif state_name == 'California':
+    elif state_name in ['California', 'Texas']:
+        zoom_num = 4.6
+    elif state_name in ['Montana', 'New Mexico', 'Arizona', 'Nevada', 'Colorado', 'Wyoming', 'Oregon', 'Idaho']:
         zoom_num = 5
-    elif state_name in ['Texas', 'Montana', 'New Mexico', 'Arizona', 'Nevada', 'Colorado', 'Wyoming', 'Oregon', 'Idaho']:
-        zoom_num = 5.4
     elif state_name in ['Vermont', 'Rhode Island', 'Hawaii', 'Connecticut', 'New Jersey', 'New Hampshire']:
-        zoom_num = 6.8
+        zoom_num = 6.2
     elif state_name == 'Delaware':
-        zoom_num = 7.8
+        zoom_num = 7.2
     elif state_name == 'District of Columbia':
         zoom_num = 10
     else:
-        zoom_num = 5.6
+        zoom_num = 5.2
 
     # grab geojson for US counties
-    if 'counties' in locals():
-        pass
-    else:
-        jsonfile = open('static/geojson/us-counties-fips-geojson.json', 'r')
-        counties_json = json.loads(jsonfile.read())
+    jsonfile = open('static/geojson/us-counties-fips-geojson.json', 'r')
+    counties_json = json.loads(jsonfile.read())
 
     # df_state_location for lat and lon per state
     lat = df_state_location[df_state_location['State/Territory'] == state_name]['lat'].iloc[0]

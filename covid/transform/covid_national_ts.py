@@ -22,7 +22,8 @@ def complete_national_ts():
     # calculate national cc per 100k, deaths per 100k, confirmed infection rate, death rate
     df_usa_ts['Confirmed Cases per 100k'] = df_usa_ts['Confirmed Cases'].div(df_usa_ts['pop_factor']).round(1)
     df_usa_ts['Deaths per 100k'] = df_usa_ts['Deaths'].div(df_usa_ts['pop_factor']).round(1)
-    df_usa_ts['Death Rate (%)'] = 100 * df_usa_ts['Deaths'].div(df_usa_ts['Confirmed Cases']).replace((np.inf, -np.inf, np.nan), (0, 0, 0)).round(6)
+    df_usa_ts['Death Rate (%)'] = 100 * df_usa_ts['Deaths'].div(
+        df_usa_ts['Confirmed Cases']).replace((np.inf, -np.inf, np.nan), (0, 0, 0)).round(6)
     df_usa_ts['Confirmation Infection Rate (%)'] = 100 * df_usa_ts['Confirmed Cases'].div(df_usa_ts['Population']).round(6)
 
     return df_usa_ts
