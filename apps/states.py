@@ -154,7 +154,7 @@ layout = html.Div([
                         ],
                   value='confirmed',
                   clearable=False)
-              ], style={'margin-left': '120px', 'width': '15%', 'padding': 10}),
+              ], style={'margin-left': '120px', 'width': '20%', 'padding': 10}),
     dbc.Row(
         [
             dbc.Col(
