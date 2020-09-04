@@ -256,10 +256,10 @@ layout = html.Div([
         >
         > The data that powers this metrics dashboard comes from [Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)
         > and [U.S. Census](https://www.census.gov). The U.S. COVID-19 metrics dashboard is only for educational purposes.
-        > This dashboard is not be used for any medical purposes and contents should not be interpreted as professional or medical guidance.
+        > This dashboard is not be used for any medical reasons and contents should not be interpreted as professional or medical guidance.
         >
         '''),
-        style={'marginLeft': 40, 'marginRight': 40, 'marginTop': 60, 'marginBottom': 30,
+        style={'marginLeft': 40, 'marginRight': 40, 'marginTop': 60, 'marginBottom': 40,
                'textAlign': 'left', 'padding': '6px 0px 0px 8px', 'border': 'thin grey dashed'}
     )
 ])
