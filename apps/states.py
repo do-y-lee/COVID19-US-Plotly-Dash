@@ -137,8 +137,8 @@ layout = html.Div([
             id='t1_national_datatable',
             columns=[{"name": i, "id": i} for i in df_snapshot.columns],
             data = df_snapshot.to_dict('records'),
-            style_header = {'fontSize': 20, 'border': '1px solid white', 'color': 'lightslategray'},
-            style_cell = {'fontSize': 48, 'textAlign': 'center', 'fontWeight': 'bold', 'font-family': 'sans-serif', 'color': 'lightslategray'},
+            style_header = {'fontSize': 18, 'border': '1px solid white', 'color': 'lightslategray'},
+            style_cell = {'fontSize': 40, 'textAlign': 'center', 'fontWeight': 'bold', 'font-family': 'sans-serif', 'color': 'lightslategray'},
             style_data={'border': '1px solid white'}
         )
     ]),

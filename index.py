@@ -36,7 +36,7 @@ app.layout = html.Div([
             columns=[{"name": i, "id": i} for i in df_title.columns],
             data=df_title.to_dict('records'),
             style_header = {'display': 'none'},
-            style_cell = {'fontSize': 54, 'textAlign': 'left', 'fontWeight': 'bold',
+            style_cell = {'fontSize': 48, 'textAlign': 'left', 'fontWeight': 'bold',
                           'font-family': 'sans-serif', 'border': '1px solid white'},
             style_table = {'padding-left': 10}
         )

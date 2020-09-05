@@ -45,7 +45,8 @@ def create_us_bubble_map_counties(metric_name):
                                         'Est Pop': True,
                                         'confirmed': False,
                                         'Lat': False,
-                                        'Long_': False},
+                                        'Long_': False,
+                                        'deaths': False},
                             hover_name='County-State',
                             labels={'confirmed': 'Cases'})
 
