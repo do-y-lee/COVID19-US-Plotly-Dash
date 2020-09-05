@@ -25,11 +25,10 @@
 
 - Python
 - Plotly Dash
-- Flask
 - Heroku
 
 ## Data Sources
 
-- John Hopkins University
-- State and Federal sites
+- [Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)
+- [U.S. Census](https://www.census.gov/)
 
