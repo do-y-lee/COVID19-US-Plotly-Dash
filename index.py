@@ -1,21 +1,27 @@
 import pandas as pd
+import dash_table
 import dash_html_components as html
 import dash_core_components as dcc
 from dash.dependencies import Input, Output
 
-from app import app, server
-import dash_table
-from apps import states, counties
+# import all apps into index.py
+from app import app
+from apps import app_counties, app_states
 
+''' 
+    Further reading on multi-page Dash apps - https://dash.plotly.com/urls
+'''
 
+# CSS styling for tabs - Tab1: National & States and Tab2: Counties under dcc.Tabs()
 tabs_styles = {
-    'height': '60px'
+    'height': '60px',
+    'margin-bottom': '50px'
 }
 tab_style = {
     'borderBottom': '1px solid #d6d6d6',
     'padding': '10px',
     'fontWeight': 'bold',
-    'fontSize': 28
+    'fontSize': 28,
 }
 tab_selected_style = {
     'borderTop': '1px solid #d6d6d6',
@@ -33,7 +39,7 @@ app.layout = html.Div([
     html.Div([
         dash_table.DataTable(
             id='index_title',
-            columns=[{"name": i, "id": i} for i in df_title.columns],
+            columns=[{'name': i, 'id': i} for i in df_title.columns],
             data=df_title.to_dict('records'),
             style_header = {'display': 'none'},
             style_cell = {'fontSize': 48, 'textAlign': 'left', 'fontWeight': 'bold',
@@ -41,11 +47,13 @@ app.layout = html.Div([
             style_table = {'padding-left': 10}
         )
     ]),
-    dcc.Tabs(id="tabs-styled-with-inline", value='tab-1',
+    dcc.Tabs(id='tabs-styled-with-inline',
+             value='tab-1',
              children=[
                  dcc.Tab(label='National & States', value='tab-1', style=tab_style, selected_style=tab_selected_style),
                  dcc.Tab(label='Counties', value='tab-2', style=tab_style, selected_style=tab_selected_style),
-             ], style=tabs_styles),
+             ],
+             style=tabs_styles),
     html.Br(),
     html.Div(id='tabs-content-inline')
 ])
@@ -55,9 +63,9 @@ app.layout = html.Div([
               [Input('tabs-styled-with-inline', 'value')])
 def display_page(tab):
     if tab == 'tab-1':
-        return states.layout
+        return app_states.layout
     elif tab == 'tab-2':
-        return counties.layout
+        return app_counties.layout
     else:
         return '404'
 
