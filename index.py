@@ -15,7 +15,7 @@ from apps import app_counties, app_states
 # CSS styling for tabs - Tab1: National & States and Tab2: Counties under dcc.Tabs()
 tabs_styles = {
     'height': '60px',
-    'margin-bottom': '50px'
+    'margin-bottom': '50px',
 }
 tab_style = {
     'borderBottom': '1px solid #d6d6d6',
@@ -29,7 +29,7 @@ tab_selected_style = {
     'backgroundColor': 'lightslategray',
     'color': 'white',
     'padding': '10px',
-    'fontSize': 28
+    'fontSize': 28,
 }
 
 # title for the dashboard and used in datatable id='index_title'
