@@ -24,8 +24,15 @@
 ## Tech Stack
 
 - Python
-- Plotly Dash
-- Heroku
+- Plotly Dash / Flask
+- Heroku: Dev Deployment
+- Digital Ocean: Prod Deployment
+  - Droplet Ubuntu 18.04
+  - Nginx
+  - uWSGI
+  - MongoDB
+    
+
 
 ## Data Sources
 
