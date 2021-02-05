@@ -44,7 +44,8 @@ def create_us_heatmap_states(metric_name):
                                    'State FIPS': False,
                                    'confirmed': False,
                                    'cc_per_100k': False,
-                                   'd_per_100k': False
+                                   'd_per_100k': False,
+                                   'deaths': False
                                },
                                labels = {'confirmed': 'Cases'},
                                hover_name = 'State/Territory'
