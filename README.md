@@ -27,6 +27,7 @@
 
 - Python
 - Plotly Dash / Flask
+- CSS
 - Heroku: Dev Deployment
 - Digital Ocean: Prod Deployment
   - Droplet Ubuntu 18.04
