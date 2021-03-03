@@ -8,9 +8,9 @@ from dash.dependencies import Input, Output
 from app import app
 from apps import app_counties, app_states
 
-''' 
-    Further reading on multi-page Dash apps - https://dash.plotly.com/urls
-'''
+"""
+Further reading on multi-page Dash apps - https://dash.plotly.com/urls
+"""
 
 # CSS styling for tabs - Tab1: National & States and Tab2: Counties under dcc.Tabs()
 tabs_styles = {
