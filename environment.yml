@@ -1,4 +1,4 @@
-name: COVID19-Plotly-Dash
+name: COVID19-US-Plotly-Dash
 channels:
   - nodefaults
 dependencies:
