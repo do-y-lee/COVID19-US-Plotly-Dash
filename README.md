@@ -36,6 +36,7 @@
 | `index.py` | Generates main layout to handle multi-page Dash application. |
 | `wsgi.py` | Separate file with application variable created to interact with uWSGI web server in DO droplet. |
 
+![application_setup_flow](assets/images/application_setup_flow.jpeg)
 
 ## Key Metrics
 
@@ -51,22 +52,24 @@
 - Python-3.7.7
 - Plotly Dash / Flask
 - CSS
-- Heroku: Dev/Stage Deployment
-  - Required deployment files:
-    - `Procfile`
-    - `runtime.txt`
-- Digital Ocean: Prod Deployment
-  - Droplet Ubuntu 18.04
-  - Nginx (Front-end Reverse Proxy)
-  - uWSGI (Application Web Server)
-  - MongoDB (Database)
-  - Required deployment files:
-    - `uwsgi.ini`
-    - `wsgi.py`
-    - `socket.sock`
-    - Other config and log files were created within the DOdroplet (e.g., .conf, .service, etc.)
-
-![application_setup_flow](assets/images/application_setup_flow.jpeg)
+- Dev/Stage Deployment
+  - Heroku 
+    - Required deployment files:
+      - `Procfile`
+      - `runtime.txt`
+- Prod Deployment
+  - Cloudfare
+    - SSL/TLS encryption 
+  - Digital Ocean
+    - Droplet Ubuntu 18.04
+    - Nginx (Front-end Reverse Proxy)
+    - uWSGI (Application Web Server)
+    - MongoDB (Database)
+    - Required deployment files:
+      - `uwsgi.ini`
+      - `wsgi.py`
+      - `socket.sock`
+      - Other config and log files were created within the DOdroplet (e.g., .conf, .service, etc.)
 
 ## Data Sources
 
