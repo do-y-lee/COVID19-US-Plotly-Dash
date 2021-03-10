@@ -13,6 +13,29 @@
 - Metrics cover states and counties in the United States.
 - COVID-19 Dash web application >> [https://cv19trackerus.com](https://cv19trackerus.com)
 
+![dashboard_screenshot](assets/images/dashboard_screenshot.jpeg)
+
+## Environment Files
+
+- conda: `environment.yml`
+- venv: `requirements.txt`
+
+## Scripts to MongoDB
+
+- `stats_csv_to_mongo.py` (Need to run just once)
+- `covid_csv_to_mongo.py` (Scheduled to run daily as a cron job)
+
+
+## Application Setup
+
+| File Name | Description |
+| ---- | ----------- |
+| `app.py` | Initiates the Dash application. |
+| /apps/`app_counties.py` | Generates county-level layout with Dash callback functions.|
+| /apps/`app_states.py` | Generates state-level layout with Dash callback functions. |
+| `index.py` | Generates main layout to handle multi-page Dash application. |
+| `wsgi.py` | Separate file with application variable created to interact with uWSGI web server in DO droplet. |
+
 
 ## Key Metrics
 
@@ -25,17 +48,25 @@
 
 ## Tech Stack
 
-- Python
+- Python-3.7.7
 - Plotly Dash / Flask
 - CSS
-- Heroku: Dev Deployment
+- Heroku: Dev/Stage Deployment
+  - Required deployment files:
+    - `Procfile`
+    - `runtime.txt`
 - Digital Ocean: Prod Deployment
   - Droplet Ubuntu 18.04
-  - Nginx
-  - uWSGI
-  - MongoDB
-    
+  - Nginx (Front-end Reverse Proxy)
+  - uWSGI (Application Web Server)
+  - MongoDB (Database)
+  - Required deployment files:
+    - `uwsgi.ini`
+    - `wsgi.py`
+    - `socket.sock`
+    - Other config and log files were created within the DOdroplet (e.g., .conf, .service, etc.)
 
+![application_setup_flow](assets/images/application_setup_flow.jpeg)
 
 ## Data Sources
 

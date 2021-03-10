@@ -1,6 +1,8 @@
 name: covid_env
 channels:
-  - nodefaults
+  - anaconda
+  - conda-forge
+  - defaults
 dependencies:
   - python=3.7.7
   - Flask=1.1.1
