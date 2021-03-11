@@ -69,7 +69,7 @@
       - `uwsgi.ini`
       - `wsgi.py`
       - `socket.sock`
-      - Other config and log files were created within the DOdroplet (e.g., .conf, .service, etc.)
+      - Other config and log files were created within the DO droplet (e.g., .conf, .service, etc.)
 
 ## Data Sources
 
