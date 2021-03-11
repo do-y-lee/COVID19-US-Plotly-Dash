@@ -30,11 +30,11 @@
 
 | File Name | Description |
 | ---- | ----------- |
-| `app.py` | Initiates the Dash application. |
-| /apps/`app_counties.py` | Generates county-level layout with Dash callback functions.|
-| /apps/`app_states.py` | Generates state-level layout with Dash callback functions. |
-| `index.py` | Generates main layout to handle multi-page Dash application. |
-| `wsgi.py` | Separate file with application variable created to interact with uWSGI web server in DO droplet. |
+| app.py | Initiates the Dash application. |
+| /apps/app_counties.py | Generates county-level layout with Dash callback functions.|
+| /apps/app_states.py | Generates state-level layout with Dash callback functions. |
+| index.py | Generates main layout to handle multi-page Dash application. |
+| wsgi.py | Separate file with application variable created to interact with uWSGI web server in DO droplet. |
 
 ![application_setup_flow](assets/images/application_setup_flow.jpeg)
 
