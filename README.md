@@ -13,7 +13,7 @@
 - Metrics cover states and counties in the United States.
 - COVID-19 Dash web application >> [https://cv19trackerus.com](https://cv19trackerus.com)
 
-![dashboard_screenshot](assets/images/dashboard_screenshot.jpeg)
+![dashboard_screenshot](assets/images/dashboard_screenshot.png)
 
 ## Environment Files
 
@@ -36,7 +36,7 @@
 | index.py | Generates main layout to handle multi-page Dash application. |
 | wsgi.py | Separate file with application variable created to interact with uWSGI web server in DO droplet. |
 
-![application_setup_flow](assets/images/application_setup_flow.jpeg)
+![application_setup_flow](assets/images/application_setup_flow.png)
 
 ## Key Metrics
 
