@@ -8,8 +8,8 @@
 
 ## Description
 
-- The Plotly Dash application tracks key metrics related COVID-19 in the United States. 
-- Metrics are displayed through mapbox heatmaps, time series, as well as aggregated values.
+- The Plotly Dash application tracks key metrics related to COVID-19 cases in the United States. 
+- Metrics are displayed through mapbox heatmaps, time series, and aggregated values.
 - Metrics cover states and counties in the United States.
 - COVID-19 Dash web application >> [https://cv19trackerus.com](https://cv19trackerus.com)
 
