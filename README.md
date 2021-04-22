@@ -1,7 +1,7 @@
 
 # COVID-19 United States Tracker
 
-> Aggregating and monitoring COVID-19 metrics at the national, state and county level.
+> Aggregating and monitoring COVID-19 metrics at the national, state, and county level.
 
 
 ---
