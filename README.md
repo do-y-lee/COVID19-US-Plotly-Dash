@@ -36,7 +36,7 @@
 | index.py | Generates main layout to handle multi-page Dash application. |
 | wsgi.py | Separate file with application variable created to interact with uWSGI web server in DO droplet. |
 
-![application_setup_flow](assets/images/application_setup_flow.png)
+![application_setup_flow](assets/images/covid_dash_app_setup_flow.png)
 
 ## Key Metrics
 
