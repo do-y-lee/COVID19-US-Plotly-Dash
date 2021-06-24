@@ -36,7 +36,13 @@
 | index.py | Generates main layout to handle multi-page Dash application. |
 | wsgi.py | Separate file with application variable created to interact with uWSGI web server in DO droplet. |
 
+---
+
+## Web App Architecture
+
 ![application_setup_flow](assets/images/covid_dash_app_setup_flow.png)
+
+--- 
 
 ## Key Metrics
 
@@ -71,8 +77,11 @@
       - `socket.sock`
       - Other config and log files were created within the DO droplet (e.g., .conf, .service, etc.)
 
+--- 
+
 ## Data Sources
 
 - [Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)
 - [U.S. Census](https://www.census.gov/)
 
+---
