@@ -84,4 +84,9 @@
 - [Johns Hopkins CSSE](https://github.com/CSSEGISandData/COVID-19)
 - [U.S. Census](https://www.census.gov/)
 
+## References
+
+- [CDC COVID Data Tracker](https://covid.cdc.gov/covid-data-tracker/#datatracker-home)
+- [WHO COVID-19 Dashboard](https://covid19.who.int/)
+
 ---
