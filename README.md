@@ -40,7 +40,7 @@
 
 ## Web App Architecture
 
-![application_setup_flow](assets/images/covid_dash_app_setup_flow.png)
+![application_setup](assets/images/covid_dash_app_setup_flow.png)
 
 --- 
 
@@ -86,6 +86,8 @@
 
 ## References
 
+- [Johns Hopkins Univeristy CSSE Web](https://www.arcgis.com/apps/dashboards/bda7594740fd40299423467b48e9ecf6)
+- [Johns Hopkins Univeristy CSSE Mobile](https://www.arcgis.com/apps/dashboards/85320e2ea5424dfaaa75ae62e5c06e61)
 - [CDC COVID Data Tracker](https://covid.cdc.gov/covid-data-tracker/#datatracker-home)
 - [WHO COVID-19 Dashboard](https://covid19.who.int/)
 
